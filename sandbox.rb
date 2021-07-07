@@ -1,4 +1,3 @@
-#input
 pigeon_data = {
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
@@ -17,6 +16,14 @@ pigeon_data = {
     "City Hall" => ["Andrew"]
   }
 }
+
+# pigeon_list = {
+#   "NAME" => {
+#     :color => [],
+#     :gender => [],
+#     :lives => []
+#     }
+# },
 
 def nyc_pigeon_organizer(data)
   pigeon_list = {} #define empty hash to hold pigeon data
@@ -41,41 +48,4 @@ def nyc_pigeon_organizer(data)
   pigeon_list
 end
 
-#output
-pigeon_list = {
-  "Theo" => {
-    :color => ["purple", "grey"],
-    :gender => ["male"],
-    :lives => ["Subway"]
-  },
-  "Peter Jr." => {
-    :color => ["purple", "grey"],
-    :gender => ["male"],
-    :lives => ["Library"]
-  },
-  "Lucky" => {
-    :color => ["purple"],
-    :gender => ["male"],
-    :lives => ["Central Park"]
-  },
-  "Ms. K" => {
-    :color => ["grey", "white"],
-    :gender => ["female"],
-    :lives => ["Central Park"]
-  },
-  "Queenie" => {
-    :color => ["white", "brown"],
-    :gender => ["female"],
-    :lives => ["Subway"]
-  },
-  "Andrew" => {
-    :color => ["white"],
-    :gender => ["male"],
-    :lives => ["City Hall"]
-  },
-  "Alex" => {
-    :color => ["white", "brown"],
-    :gender => ["male"],
-    :lives => ["Central Park"]
-  }
-}
+nyc_pigeon_organizer(pigeon_data)
